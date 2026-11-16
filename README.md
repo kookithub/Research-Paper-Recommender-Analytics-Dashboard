@@ -123,11 +123,11 @@ via its API: one record per paper with a Chulalongkorn University affiliation, p
 - `notebooks/API.ipynb`: hard-coded Elsevier key removed; reads `ELSEVIER_API_KEY` from the environment.
 
 ## Credits
-This started as a team university project at Chulalongkorn University. The team built the data
-pipeline (Scopus API collection, JSON extraction, subject-code mapping) and the first single-file
-Streamlit prototype; those originals are kept in `notebooks/` and `archive/`. The dataset was provided
-for the course. The current app (restructured code, recommendation engine, UI, tests and CI) is a
-rebuild of that prototype.
+This started as a team university project at Chulalongkorn University. In that team version I built
+the recommendation (machine learning) part and the dashboard, mainly the machine learning; the team
+built the data pipeline (Scopus API collection, JSON extraction, subject-code mapping). Those
+originals are kept in `notebooks/` and `archive/`. The dataset was provided for the course. I later
+rebuilt the app on my own: restructured code, the sparse recommendation engine, the UI, tests and CI.
 
 ## License
 Code: [MIT](LICENSE). The Scopus records are not included in this repository; they belong to their
