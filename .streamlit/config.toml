@@ -1,0 +1,13 @@
+[server]
+address = "localhost"
+
+[browser]
+gatherUsageStats = false
+
+# Separate light/dark sections keep Streamlit's automatic light/dark switching.
+# A plain [theme] primaryColor would lock every viewer to light mode.
+[theme.light]
+primaryColor = "#1f6feb"
+
+[theme.dark]
+primaryColor = "#4c8dff"

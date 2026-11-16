@@ -1,0 +1,15 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Data and model caches (fetch with scripts/download_data.py)
+data/raw/
+data/processed/
+models/
+
+# Local / OS
+.DS_Store
+*.part

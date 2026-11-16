@@ -1,0 +1,26 @@
+[project]
+name = "research-paper-recommender-analytics-dashboard"
+version = "1.0.0"
+description = "Content-based research paper recommender over Chulalongkorn University Scopus records (2010-2023)."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+src = ["app", "scripts", "tests"]
+extend-exclude = ["notebooks", "archive"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "UP", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]  # inline CSV fixture rows
+
+[tool.ruff.lint.isort]
+known-first-party = ["core", "views"]
+
+[tool.pytest.ini_options]
+pythonpath = ["app"]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore:.*No runtime found.*"]
